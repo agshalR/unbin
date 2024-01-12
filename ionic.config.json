@@ -1,0 +1,7 @@
+{
+  "name": "uasAgshalsmt3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

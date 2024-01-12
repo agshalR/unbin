@@ -1,0 +1,114 @@
+<ion-content [fullscreen]="true" class="white-background">
+  <ion-card class="info-card">
+    <ion-card-header>
+      <ion-card-title
+        ><ion-icon name="checkmark-circle-outline"></ion-icon> Pendaftaran Calon
+        Mahasiswa</ion-card-title
+      >
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="stacked">Nama Lengkap</ion-label>
+          <ion-input
+            [(ngModel)]="nama_lengkap"
+            type="text"
+            placeholder="Masukkan Nama Lengkap"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Jenis Kelamin</ion-label>
+          <ion-select
+            placeholder="Pilih Jenis Kelamin"
+            [(ngModel)]="jenis_kelamin"
+          >
+            <ion-select-option value="laki-laki">Laki-laki</ion-select-option>
+            <ion-select-option value="perempuan">Perempuan</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">No. Handphone</ion-label>
+          <ion-input
+            [(ngModel)]="no_handphone"
+            type="tel"
+            placeholder="Masukkan No.Handphone"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input
+            [(ngModel)]="email"
+            type="email"
+            placeholder="Masukkan Email"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Asal Sekolah</ion-label>
+          <ion-input
+            [(ngModel)]="asal_sekolah"
+            type="text"
+            placeholder="Masukkan Asal Sekolah"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Program Studi</ion-label>
+          <ion-select
+            placeholder="Pilih Program Studi"
+            [(ngModel)]="program_studi"
+          >
+            <ion-select-option value="Teknik Informatika"
+              >Teknik Informatika</ion-select-option
+            >
+            <ion-select-option value="Teknologi Informasi"
+              >Tekhnologi Informasi</ion-select-option
+            >
+            <ion-select-option value="Sistem Informasi"
+              >Sistem Informasi</ion-select-option
+            >
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Jenjang</ion-label>
+          <ion-select placeholder="Pilih Jenjang" [(ngModel)]="jenjang">
+            <ion-select-option value="D3">Diploma (D3)</ion-select-option>
+            <ion-select-option value="S1">Sarjana (S1)</ion-select-option>
+            <ion-select-option value="S2">Magister (S2)</ion-select-option>
+            <ion-select-option value="S3">DOKTOR (S3)</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Kelas</ion-label>
+          <ion-select placeholder="Pilih Kelas" [(ngModel)]="kelas">
+            <ion-select-option value="KELAS A">Kelas A</ion-select-option>
+            <ion-select-option value="KELAS B">Kelas B</ion-select-option>
+            <ion-select-option value="KELAS C">Kelas C</ion-select-option>
+            <ion-select-option value="KELAS D">Kelas D</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Info Kampus</ion-label>
+          <ion-select placeholder="Pilih Info Kampus" [(ngModel)]="info_kampus">
+            <ion-select-option value="Mahasiswa"
+              >Mahasiswa Unbin</ion-select-option
+            >
+            <ion-select-option value="internet">Internet</ion-select-option>
+            <ion-select-option value="Guru">Rekomendasi Guru</ion-select-option>
+            <ion-select-option value="Brousur">Brousur</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <ion-button expand="block" (click)="addData()" color="primary"
+        >Kirim</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
